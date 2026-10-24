@@ -1,0 +1,1 @@
+Never truncate a UTF-8 string by blindly slicing its bytes, because you may split a multi-byte character; truncate at valid character boundaries, and consider grapheme clusters when displaying user-perceived characters.
